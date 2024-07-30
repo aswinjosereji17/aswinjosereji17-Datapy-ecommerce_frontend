@@ -537,3 +537,48 @@ footer {
     background-color: #32cd32; 
   }
   
+  .offer-card img, .offer-card .centered-text button {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .offer-card img, .offer-card .centered-text button {
+    transition: all 1s ease-in-out;
+  }
+  
+
+  .offer-card img {
+    transition: transform 1s ease-in-out;
+  }
+  
+  .offer-card img:hover {
+    transform: rotate(5deg) scale(1.25); 
+  }
+
+  .offer-card button:hover{
+    background-color: #32cd32;
+  }
+
+
+  .category-card, .category-card img, .category-card .btn {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .category-card:hover {
+    background-color: #f0f8ff; 
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+  .category-card img:hover {
+    transform: scale(1.1);
+    opacity: 0.9; 
+  }
+  
+  .category-card .btn:hover {
+    transform: scale(1.1);
+    color: black; 
+    background-color: yellow;
+  }
+  
+  

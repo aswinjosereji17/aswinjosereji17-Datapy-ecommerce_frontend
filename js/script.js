@@ -9,4 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+    function animateImage(image) {
+      image.classList.add('animate');
+      setTimeout(() => image.classList.remove('animate'), 1000); // Remove the class after 1 second to reset the animation
+    }
