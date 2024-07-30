@@ -30,6 +30,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000; 
+    border-bottom: 1px solid wheat;
 }
 
 nav1 {
@@ -61,6 +62,10 @@ nav1 ul li a {
     /* margin-left: 40px; */
 }
 
+#nav-menu a{
+    text-decoration: none;
+}
+
 
 
 .search-box{
@@ -84,6 +89,8 @@ nav1 ul li a {
     border: none;
     width: 80px;
     height: 30px;
+    cursor: pointer;
+    
 }
 .hamburger {
     display: none;
@@ -152,14 +159,14 @@ nav1 ul li a {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    width: 200px;
+    width: 300px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .category-card img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 5px;
 }
 
@@ -186,22 +193,22 @@ nav1 ul li a {
   
   .offer-grid {
     display: flex;
-    gap: 20px; /* Space between the cards */
+    gap: 20px; 
     flex-wrap: wrap;
     justify-content: space-around;
   }
   
   .offer-card {
     position: relative;
-    flex: 1; /* Make sure the cards take equal space */
-    overflow: hidden; /* Hide overflow if the content exceeds the card size */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    flex: 1; 
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .offer-card img {
     width: 100%;
-    height: auto; /* Ensure the image maintains its aspect ratio */
+    height: auto;
     display: block;
   }
   
@@ -210,11 +217,21 @@ nav1 ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners for the text background */
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
     text-align: center;
+  }
+
+  .centered-text button{
+    margin: 30px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    border: none;
   }
   
 
@@ -298,7 +315,6 @@ footer {
     margin-top: auto;
 }
 
-/* Media Queries */
 
 @media (max-width: 2200px) {
     .logo{
@@ -414,6 +430,39 @@ footer {
         flex-direction: column;
     }
    
+    /* animation */
+    .product-card, .product-card img, .product-card .btn {
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .product-card:hover {
+        background-color: #f0f8ff; 
+        transform: translateY(-10px); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      }
+      
+    
+      .product-card img:hover {
+        transform: scale(1.1);
+        opacity: 0.9; 
+      }
+      
+      .product-card .btn:hover {
+        transform: scale(1.1);
+        color: #fff; 
+      }
+      
+      .btn-wishlist:hover {
+        background-color: red; 
+      }
+      
+      .btn-add-to-cart:hover {
+        background-color: #4682b4; 
+      }
+      
+      .btn-buy-now:hover {
+        background-color: #32cd32; 
+      }
     
 }
 
@@ -424,6 +473,8 @@ footer {
     padding: 10px;
     border-radius: 5px;
     top: 40%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    height: 160px;
 }
 
 .carousel-caption h3,
@@ -438,3 +489,51 @@ footer {
 .carousel-caption p {
     font-size: 16px; 
 }
+
+.carousel-caption button{
+    background-color: #f44336;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    width: 150px;
+    max-width: 200px;
+}
+
+
+
+/* Animations */
+
+.product-card, .product-card img, .product-card .btn {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .product-card:hover {
+    background-color: #f0f8ff; 
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+  .product-card img:hover {
+    transform: scale(1.1);
+    opacity: 0.9; 
+  }
+  
+  .product-card .btn:hover {
+    transform: scale(1.1);
+    color: #fff; 
+  }
+  
+  .btn-wishlist:hover {
+    background-color: red; 
+  }
+  
+  .btn-add-to-cart:hover {
+    background-color: #4682b4; 
+  }
+  
+  .btn-buy-now:hover {
+    background-color: #32cd32; 
+  }
+  
