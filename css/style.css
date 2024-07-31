@@ -122,7 +122,7 @@ nav1 ul li a {
 }
 
 .features{
-    height: 90px;
+    height: 80px;
     width: 300px;
     background-color: #333;
     color: black;
@@ -144,7 +144,15 @@ nav1 ul li a {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories h2{
+    font-size: 23px;
+}
+.categories h5{
+    font-size: 16px;
+    padding-top: 13px;
 }
 
 .category-grid {
@@ -159,14 +167,14 @@ nav1 ul li a {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    width: 300px;
+    width: 200px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .category-card img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 5px;
 }
 
@@ -191,6 +199,10 @@ nav1 ul li a {
     padding: 20px;
   }
   
+  .offer button{
+    cursor: pointer;
+  }
+
   .offer-grid {
     display: flex;
     gap: 20px; 
@@ -243,6 +255,14 @@ nav1 ul li a {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1;
+}
+
+.products h2{
+    font-size: 23px;
+}
+.products h5{
+    font-size: 16px;
+    padding-top: 13px;
 }
 
 .product-grid {
@@ -310,10 +330,115 @@ nav1 ul li a {
 footer {
     background: #000000;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left; 
+    padding: 5px 0;
     margin-top: auto;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+.footer-section form {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+.form-news{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-section form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.footer-section form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #1e90ff;
+    color: #fff;
+    cursor: pointer;
+    height: 44px;
+    margin-left: 4px;
+}
+
+.footer-section form button:hover {
+    background: #0b78e3;
+}
+
+.footer-bottom {
+    padding: 20px 0px 0px 0px;
+    border-top: 1px solid #444;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-bottom p{
+    padding-left: 40px;
+}
+
+
+.footer-section i {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.footer-section i:hover {
+    color: #1e90ff;
+}
+
+.newsletter-follow {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-follow div {
+    margin-bottom: 20px;
+}
+
 
 
 @media (max-width: 2200px) {
@@ -463,6 +588,49 @@ footer {
       .btn-buy-now:hover {
         background-color: #32cd32; 
       }
+
+      
+.carousel-caption {
+    padding: 10px;
+    border-radius: 5px;
+    top: 20% !important;
+    background-color: rgba(0, 0, 0, 0.7); 
+    height: 295px !important;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    color: #fff; 
+}
+
+.carousel-caption h3 {
+    font-size: 24px; 
+}
+
+.carousel-caption p {
+    font-size: 16px; 
+}
+
+.carousel-caption button{
+    /* background-color: #f44336; */
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 40px;
+    border: 1px solid #f44336;
+    border-radius: 2px;
+    color: white;
+    /* color: #000000; */
+    
+    width: 150px;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.carousel-caption button:hover{
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
     
 }
 
@@ -491,13 +659,23 @@ footer {
 }
 
 .carousel-caption button{
-    background-color: #f44336;
+    /* background-color: #f44336; */
+    background-color: rgba(0, 0, 0, 0.1);
     height: 40px;
-    border: none;
-    border-radius: 4px;
+    border: 1px solid #f44336;
+    border-radius: 2px;
     color: white;
+    /* color: #000000; */
+    
     width: 150px;
     max-width: 200px;
+    cursor: pointer;
+}
+
+.carousel-caption button:hover{
+    background-color: #f44336;
+    color: white;
+    border: none;
 }
 
 
