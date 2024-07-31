@@ -327,6 +327,110 @@ nav1 ul li a {
     padding: 4px 7px;
 }
 
+
+/* rec */
+
+.recommended {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recommended-grid {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.recommended-grid h2{
+    font-size: 23px;
+}
+
+.recommended-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.recommended-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 47%;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.recommended-card img {
+    width: 97%;
+    height: auto;
+    border-radius: 3px;
+}
+.recommended-card p{
+    color: #f44336;
+    font-weight: bold;
+}
+
+.recommended-card h5{
+    padding-top: 6px;
+    font-size: 16px;
+}
+
+.button-group1 {
+    margin-top: 10px;
+}
+
+.button-group1 .btn {
+    margin-right: 5px;
+}
+
+.recommended-image-text {
+    position: relative;
+    margin: 40px;
+    width: 75%;
+    text-align: center;
+}
+
+.recommended-image-text img {
+    width: 106%;
+    height: 103%;
+    border-radius: 5px;
+}
+
+.recommended-image-text button{
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #f44336;
+    cursor: pointer;
+  }
+
+  .recommended-image-text button:hover{
+    background-color: #f44336;
+  }
+
+.recommended-centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
 footer {
     background: #000000;
     color: #fff;
@@ -339,14 +443,14 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px 40px;
+    padding: 20px 0px;
     gap: 20px;
 }
 
 .footer-section {
     flex: 1;
     min-width: 200px;
-    margin: 10px 0;
+    margin: 5px 50px;
 }
 
 .footer-section h4 {
@@ -438,6 +542,9 @@ footer {
 .newsletter-follow div {
     margin-bottom: 20px;
 }
+
+
+
 
 
 
@@ -682,23 +789,23 @@ footer {
 
 /* Animations */
 
-.product-card, .product-card img, .product-card .btn {
+.recommended-card .btn,.recommended-card, .recommended-card img, .product-card, .product-card img, .product-card .btn {
     transition: all 0.5s ease-in-out;
   }
   
-  .product-card:hover {
+  .recommended-card:hover, .product-card:hover {
     background-color: #f0f8ff; 
     transform: translateY(-10px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
 
-  .product-card img:hover {
+  .recommended-card img:hover,.product-card img:hover {
     transform: scale(1.1);
     opacity: 0.9; 
   }
   
-  .product-card .btn:hover {
+  .recommended-card .btn:hover, .product-card .btn:hover {
     transform: scale(1.1);
     color: #fff; 
   }
