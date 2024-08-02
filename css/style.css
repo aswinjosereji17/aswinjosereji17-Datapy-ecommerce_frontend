@@ -35,9 +35,9 @@ header {
 
 nav1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    max-width: 960px;
+    max-width: 1409px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -48,7 +48,8 @@ nav1 ul {
 }
 
 nav1 ul li {
-    margin-right: 20px;
+    margin-right: 17px;
+    margin-left: 5px;
 }
 
 nav1 ul li a {
@@ -77,12 +78,28 @@ nav1 ul li a {
     color: black;
     /* margin-right: 30px; */
 }
+.search-box:hover{
+    border: 1px solid #f44336;
+}
+
 .search-box::placeholder {
     color: black;
     padding-left: 10px;
+    border: none;
   }
+
+.search_btn{
+    width: 30px !important;
+    color: #f44336;
+    border-radius: 5px;
+    margin-right: 2px;
+    background-color: rgb(204, 220, 236);
+    border: none;
+    height: 31px;
+  }
+
 .sign-in{
-    background-color: blue;
+    background-color: #2455f4;
     border-radius: 4px;
     color: white;
     text-decoration: none;
@@ -90,8 +107,15 @@ nav1 ul li a {
     width: 80px;
     height: 30px;
     cursor: pointer;
+    border: 1px solid blue;
     
 }
+.sign-in:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -167,14 +191,14 @@ nav1 ul li a {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    width: 200px;
+    width: 210px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .category-card img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 139px;
     border-radius: 5px;
 }
 
@@ -358,18 +382,18 @@ nav1 ul li a {
 
 .recommended-card {
     border: 1px solid #ddd;
-    padding: 10px;
-    width: 47%;
-    height: 100%;
+    padding: 20px;
+    width: 200px;/*ed*/
+    /* height: 100%; */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     border-radius: 5px;
 }
 
 .recommended-card img {
-    width: 97%;
-    height: auto;
-    border-radius: 3px;
+    width: 150px;  /*ed*/
+    height: 120px; /*ed*/
+    border-radius: 5px;
 }
 .recommended-card p{
     color: #f44336;
@@ -393,7 +417,10 @@ nav1 ul li a {
     position: relative;
     margin: 40px;
     width: 75%;
+    height: 552px;
     text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .recommended-image-text img {
@@ -521,7 +548,7 @@ footer {
 }
 
 .footer-bottom p{
-    padding-left: 40px;
+    padding-left: 0px;
 }
 
 
@@ -550,7 +577,12 @@ footer {
 
 @media (max-width: 2200px) {
     .logo{
-        margin-left: -225px;
+        margin-left: -118px;
+        filter: drop-shadow( 3px -1px 10px rgb(130, 198, 219));
+        cursor: pointer;
+    }
+    .logo img{
+        border-radius: 10px;
     }
     .search-box{
         border-radius: 5px;
@@ -599,6 +631,54 @@ footer {
     .category-card, .product-card {
         width: 90%;
     }
+
+    
+
+    .recommended-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recommended-card {
+        /* width: 400px */
+        width: 316px;
+        height: 329px;
+        margin: 8px;
+    }
+    
+    .recommended-card img{
+        width: 65%;
+        height: 60%;
+        border-radius: 5px;
+    }
+
+    .recommended{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recommended-image-text{
+        margin: 0px;
+    }
+
+    .recommended-image-text img{
+        width: 134%;
+    }
+
+    .recommended-centered-text {
+        position: absolute;
+        top: 50%;
+        left: 66%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 8px;
+        height: 163px;
+    }
+
+
+
+
 
     nav1 ul {
         flex-direction: column;
@@ -822,20 +902,20 @@ footer {
     background-color: #32cd32; 
   }
   
-  .offer-card img, .offer-card .centered-text button {
+  .recommended-image-text img, .offer-card img, .offer-card .centered-text button {
     transition: all 0.5s ease-in-out;
   }
   
-  .offer-card img, .offer-card .centered-text button {
+  .recommended-image-text img, .offer-card img, .offer-card .centered-text button {
     transition: all 1s ease-in-out;
   }
   
 
-  .offer-card img {
+  .recommended-image-text img, .offer-card img {
     transition: transform 1s ease-in-out;
   }
   
-  .offer-card img:hover {
+  .recommended-image-text img:hover, .offer-card img:hover {
     transform: rotate(5deg) scale(1.25); 
   }
 
